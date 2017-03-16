@@ -15,7 +15,7 @@ public class Principal {
 	    	 * Cada elemento em uma linha no arquivo.
 	    	 * Chama os métodos de ordenação de bubblesort
 	    	 */
-	        FileReader sequencia = new FileReader("//Users/matheusmedeiros/Documents/workspace/atal-um/src/bubblesort/sequencia.txt");
+	        FileReader sequencia = new FileReader("sequencia.txt");
 	        BufferedReader leitor = new BufferedReader(sequencia);
 	        String s = leitor.readLine();
 	        ArrayList<Integer> aList = new ArrayList<Integer>();
