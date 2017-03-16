@@ -33,12 +33,12 @@ public class bs {
 	public ArrayList<Integer> ordenarAoContrario (ArrayList<Integer> al){
 		int vzs = 0;
 		for(int i = 0;i<=al.size()-1;i++){
-			for(int j = al.size()-1;j>0;j--){
-				if(al.get(j) < al.get(j-1)){
-					int aux = al.get(j);
-					al.set(j, al.get(j-1));
-					al.set(j-1, aux);
-				}vzs++;
+			for(int j = al.size()-1;j>0;j--){ // Foram pegos os dois ultimos numeros
+				if(al.get(j) < al.get(j-1)){ // Verifica se o último elemento é menor que o anterior ao mesmo
+					int aux = al.get(j); // Seta, na variavel auxiliar, o último elemento
+					al.set(j, al.get(j-1)); // Seta no lugar do último lugar o valor do elemento anterior
+					al.set(j-1, aux); // Seta no lugar do anterior o valor da varivavel auxiliar
+				}vzs++; // Só para contar quantos laços faz
 			} 
 
 		}  System.out.println(al);
