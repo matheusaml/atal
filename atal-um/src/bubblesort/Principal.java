@@ -35,7 +35,7 @@ public class Principal {
 	        sequencia.close();
 	        
 	      } catch (IOException e) {
-	          System.err.printf("Erro na abertura do arquivo:",
+			System.err.printf("Erro na abertura do arquivo: ",
 	            e.getMessage());
 	      }
 	   
