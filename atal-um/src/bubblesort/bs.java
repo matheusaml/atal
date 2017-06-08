@@ -11,6 +11,7 @@ public class bs {
  */
 
 	public ArrayList<Integer> ordenar (ArrayList<Integer> al){
+		long tempoInicial = System.currentTimeMillis();
 		int vzs = 0;
 		for(int i = 0; i < al.size()-1; i++){
 			for(int j = 0; j < al.size()-1; j++){
@@ -25,6 +26,8 @@ public class bs {
 			
 		} System.out.println("\n" + al);
 		System.out.println(vzs + " laços");
+		long tempoFinal = System.currentTimeMillis();
+		System.out.println( tempoFinal - tempoInicial  + " milissegundo(s)");
 		return al;
 	}
 	/*

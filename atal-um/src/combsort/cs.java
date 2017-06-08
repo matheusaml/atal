@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class cs {
 
 	public ArrayList<Integer> ordenar(ArrayList<Integer> al){
+		long tempoInicial = System.currentTimeMillis();
 		
 		double fator = 1.3;
 		double tamanho = al.size();
@@ -21,9 +22,11 @@ public class cs {
 					}
 					gap = (int) (gap/1.3);
 				}
-
+		
 		}
 			System.out.println(al);
+			long tempoFinal = System.currentTimeMillis();
+			System.out.println( tempoFinal - tempoInicial  + " milissegundo(s)");
 			return al;
 	}
 
